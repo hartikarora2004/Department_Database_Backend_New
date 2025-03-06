@@ -1,0 +1,2 @@
+username,email,first_name,last_name,department_code,year,designation,is_doctrate,fields_of_interest,phd_instuition
+CSE_Test_Faculty,faculty@iitrpr.ac.in,Test,Faculty,CSE,2021,Assistant Professor,false,Game Dev,Harvard

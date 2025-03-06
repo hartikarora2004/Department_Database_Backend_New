@@ -1,0 +1,9 @@
+pg_dump -h dpg-cghspg02qv2772nra58g-a.singapore-postgres.render.com -U sourabh -d dept_databasse -F c -b -v -f backup_file_name.dump
+pg_restore -U postgres -d localdb backup_file_name.dump
+pg_dump -U postgres -d localdb -F c -b -v -f backup_file_name_new.dump
+pg_restore -h dpg-cgbu0n1mbg55nqg772qg-a.singapore-postgres.render.com -U hodcse -d dep backup_file_name_new.dump
+DATABASE_URL=postgres://hodcse:MRPnFNFQtH8viopHwTTDInCQvvxFhDGi@dpg-cgbu0n1mbg55nqg772qg-a.singapore-postgres.render.com/dep
+pg_restore -h containers-us-west-43.railway.app -U postgres -p 6661 -d railway backup_file_name_new.dump
+pg_dump -h containers-us-west-43.railway.app -U postgres -p 6661 -d railway -F c -b -v -f backup_file_name_new.dump
+pg_restore -U postgres -d ndb backup_file_name_new.dump
+pg_restore -U sourabh -d dept_data 15_04_2023.dump

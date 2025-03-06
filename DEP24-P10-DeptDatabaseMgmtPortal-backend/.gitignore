@@ -1,0 +1,8 @@
+media
+gunicorn_logs
+/env/
+__pycache__/
+*.pyc
+mysite/.env
+.env
+.dept_db.log

@@ -1,0 +1,3 @@
+title,description,identifier,publication_status,accepted_date,authors,published_date,department,link,authors_text,publication_type,identifier_type,field_tags
+string,string,string,string,dd-mm-yyyy,email_list,dd-mm-yyyy,list,string,string,string,string,list_str
+Print Quality Assessment For Stochastic Clustered-Dot Halftones Using Compactness Measures," P. Goyal and J. P. Allebach, “Print Quality Assessment For Stochastic Clustered-Dot Halftones Using Compactness Measures”, IEEE International Conference on Image Processing (IEEE-ICIP), Sep 25-28, 2016, Phoenix, Arizona, USA.",,S,,puneet@iitrpr.ac.in,,1,,P. Goyal and J. P. Allebach,C,O,CS

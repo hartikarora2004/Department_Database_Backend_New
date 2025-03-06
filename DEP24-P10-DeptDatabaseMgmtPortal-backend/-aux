@@ -1,0 +1,255 @@
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          1  0.0  0.0 173668 15744 ?        Ss   Feb15 259:50 /lib/systemd/systemd --system --deserialize 16
+root        137  0.0  0.0 241140  9740 ?        Ssl  Feb15   2:48 /usr/lib/accountsservice/accounts-daemon
+message+    138  0.0  0.0   7864  5072 ?        Ss   Feb15  36:44 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        142  0.0  0.0  29872 18500 ?        Ss   Feb15   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        143  0.0  0.0 236316  9212 ?        Ssl  Feb15   0:05 /usr/lib/policykit-1/polkitd --no-debug
+syslog      144  0.0  0.0 224348  5620 ?        Ssl  Feb15   4:17 /usr/sbin/rsyslogd -n -iNONE
+root        150  0.0  0.0  17816  8480 ?        Ss   Feb15  14:09 /lib/systemd/systemd-logind
+root        152  0.0  0.0 395240 13520 ?        Ssl  Feb15   2:18 /usr/lib/udisks2/udisksd
+root        158  0.0  0.0 318820 13504 ?        Ssl  Feb15   0:01 /usr/sbin/ModemManager
+root       3378  0.0  0.0   8544  3068 ?        Ss   Feb15   0:10 /usr/sbin/cron -f
+daemon     3383  0.0  0.0   3800  2256 ?        Ss   Feb15   0:00 /usr/sbin/atd -f
+root       3389  0.0  0.0  12184  7320 ?        Ss   Feb15   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       3390  0.0  0.0   7356  2264 ?        Ss+  Feb15   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root       4481  0.0  0.0 108124 20848 ?        Ssl  Feb15   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+dep2      16080  0.0  0.0 2791084 125288 ?      Sl   Apr21   0:06 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      16082  0.0  0.0 2790324 124296 ?      Sl   Apr21   0:06 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      16086  0.0  0.0 2789952 123952 ?      Sl   Apr21   0:06 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      16087  0.0  0.0 2790092 124192 ?      Sl   Apr21   0:09 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      20422  0.0  0.0   7536  4000 ?        Ss   Apr19   0:00 tmux
+dep2      20423  0.0  0.0  13368  8368 pts/10   Ss+  Apr19   0:00 -bash
+dep2      23540  0.0  0.0   7248  3956 ?        Ss   Apr18   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+dep2      40347  0.0  0.0  30008 21844 ?        S    Apr18   1:05 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+root      50756  0.0  0.0  13932  9048 ?        Ss   05:54   0:00 sshd: dep2 [priv]
+dep2      51103  0.0  0.0  14064  6136 ?        S    05:54   0:01 sshd: dep2@notty
+dep2      51104  0.0  0.0   8752  3628 ?        Ss   05:54   0:00 bash
+dep2      51148  0.0  0.0   2612   592 ?        S    05:54   0:00 sh /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/bin/code-server --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/dep2/.vscode-server/.704ed70d4fd1c6bd6342c436f1ede30d1cff4710.token
+dep2      51157  0.0  0.0 946304 86360 ?        Sl   05:54   0:24 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/server-main.js --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/dep2/.vscode-server/.704ed70d4fd1c6bd6342c436f1ede30d1cff4710.token
+dep2      51207  0.0  0.0 959928 60728 ?        Sl   05:54   0:15 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=ptyHost --logsPath /home/dep2/.vscode-server/data/logs/20230422T055454
+dep2      51414  0.0  0.0 836124 49816 ?        Sl   05:54   0:04 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=fileWatcher
+dep2      51442  0.0  0.0 956424 86632 ?        Sl   05:54   0:19 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+dep2      51473  0.0  0.0  13192  8440 pts/68   Ss+  05:54   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+root      63243  0.0  0.0 3642836 50440 ?       Ssl  Apr15   4:44 /usr/bin/containerd
+dep2      64519  0.0  0.0 913260 71904 ?        Ssl  Apr21   1:27 PM2 v5.3.0: God Daemon (/home/dep2/.pm2)
+dep2      64590  0.0  0.0 11415504 97944 ?      Ssl  Apr21   4:13 node /home/dep2/T07/frontend/deploy/Deploy.js
+dep2      65372  0.0  0.0 875004 88432 ?        Ssl  05:58   0:43 node /home/dep2/.nvm/versions/node/v18.16.0/bin/yarn
+dep2      65387  0.0  0.0   2616   600 ?        S    05:58   0:00 /bin/sh -c next start -p 3000
+dep2      65388  0.0  0.0 22237652 112200 ?     Sl   05:58   0:02 /home/dep2/.nvm/versions/node/v18.16.0/bin/node /home/dep2/T07/frontend/Department-Database/node_modules/.bin/next start -p 3000
+root      73391  0.0  0.0  51216  2212 ?        Ss   Apr21   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+www-data  73392  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73393  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73394  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73395  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73396  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73397  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73398  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73399  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73400  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73401  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73402  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73403  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73404  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73405  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73406  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73407  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73408  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73409  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73410  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73411  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73412  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73413  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73414  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73415  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73416  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73417  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73418  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73419  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73420  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73421  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73422  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73423  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73424  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73425  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73426  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73427  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73428  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73429  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73430  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73431  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73432  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73433  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73434  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73435  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73436  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73437  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73438  0.0  0.0  51780  5204 ?        S    Apr21   0:00 nginx: worker process
+www-data  73439  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73440  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73441  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73442  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73443  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73444  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73445  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73446  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73447  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73448  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73449  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73450  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73451  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73452  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73453  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73454  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73455  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73456  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73457  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73458  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73459  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73460  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73461  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73462  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73463  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73464  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73465  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73466  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73467  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73468  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73469  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73470  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73471  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73472  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73473  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73474  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73475  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73476  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73477  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73478  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73479  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73480  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73481  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73482  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73483  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73484  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73485  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73486  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73487  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73488  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73489  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73490  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73491  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73492  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73493  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73494  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73495  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73496  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73497  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73498  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73499  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73500  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73501  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73502  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73503  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73504  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73505  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73506  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73507  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73508  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73509  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73510  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73511  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73512  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73513  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73514  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73515  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73516  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73517  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73518  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73519  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73520  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73521  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73522  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73524  0.0  0.0  51780  5208 ?        S    Apr21   0:00 nginx: worker process
+www-data  73525  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73526  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73527  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73528  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73529  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73530  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73531  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73532  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73533  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73534  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73535  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+www-data  73536  0.0  0.0  51780  5212 ?        S    Apr21   0:00 nginx: worker process
+dep2      88911  0.0  0.0 126868 95908 ?        S    Apr21   0:23 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      95758  0.0  0.0 126164 94684 ?        S    Apr21   0:26 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2      96338  0.0  0.0  13192  8384 pts/57   Ss+  Apr21   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+dep2      99793  0.0  0.0  13192  8460 pts/62   Ss   Apr21   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+root      99948  0.0  0.0 4993536 77572 ?       Ssl  Apr15   4:08 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+dep2     100052  0.0  0.0  75792 47700 pts/62   S+   Apr21   0:00 python3 manage.py runserver 0.0.0.0:7000
+dep2     100054  0.0  0.0 2186488 115844 pts/62 Sl+  Apr21  37:47 /usr/bin/python3 manage.py runserver 0.0.0.0:7000
+postgres 100071  0.0  0.0 219228 18512 ?        Ss   Apr21   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(45680) idle
+dep2     101201  0.0  0.0 130196 99396 ?        S    Apr21   0:25 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     101286  0.0  0.0  13192  8260 pts/30   Ss+  Apr19   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+dep2     102262  0.0  0.0  13192  8356 pts/39   Ss   Apr19   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+postgres 103112  0.0  0.0 219156 20308 ?        Ss   09:12   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(47972) idle
+postgres 103117  0.0  0.0 219292 20204 ?        Ss   09:12   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(47980) idle
+postgres 103119  0.0  0.0 219156 20372 ?        Ss   09:13   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(47982) idle
+postgres 103150  0.0  0.0 219156 20432 ?        Ss   09:14   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48038) idle
+postgres 103161  0.0  0.0 219156 20372 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48048) idle
+postgres 103163  0.0  0.0 219296 21404 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48052) idle
+postgres 103165  0.0  0.0 219292 20204 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48056) idle
+postgres 103168  0.0  0.0 219292 20204 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48062) idle
+postgres 103170  0.0  0.0 219292 20200 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48066) idle
+postgres 103174  0.0  0.0 219292 20204 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48070) idle
+postgres 103176  0.0  0.0 219292 20204 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48072) idle
+postgres 103178  0.0  0.0 218640 18944 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48074) idle
+postgres 103180  0.0  0.0 219292 20236 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48078) idle
+postgres 103182  0.0  0.0 219292 20240 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48080) idle
+postgres 103184  0.0  0.0 219316 20264 ?        Ss   09:15   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48082) idle
+postgres 103188  0.0  0.0 219288 20208 ?        Ss   09:16   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48086) idle
+postgres 103191  0.0  0.0 219296 20232 ?        Ss   09:16   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48094) idle
+postgres 103193  0.0  0.0 219296 20236 ?        Ss   09:16   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48096) idle
+postgres 103198  0.0  0.0 219296 20232 ?        Ss   09:16   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48102) idle
+postgres 103199  0.0  0.0 218644 19036 ?        Ss   09:16   0:00 postgres: 12/main: sourabh dept_data 127.0.0.1(48104) idle
+dep2     106060  0.0  0.0 119400 87700 ?        S    Apr21   0:05 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     111369  0.0  0.0  30008 21932 ?        S    Apr21   0:11 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+postgres 113166  0.0  0.0 217416 29564 ?        Ss   Apr15   0:53 /usr/lib/postgresql/12/bin/postgres -D /var/lib/postgresql/12/main -c config_file=/etc/postgresql/12/main/postgresql.conf
+postgres 113168  0.0  0.0 217660 22364 ?        Ss   Apr15   0:00 postgres: 12/main: checkpointer   
+postgres 113169  0.0  0.0 217416  8704 ?        Ss   Apr15   0:07 postgres: 12/main: background writer   
+postgres 113170  0.0  0.0 217416 10296 ?        Ss   Apr15   0:08 postgres: 12/main: walwriter   
+postgres 113171  0.0  0.0 218092  8904 ?        Ss   Apr15   0:15 postgres: 12/main: autovacuum launcher   
+postgres 113172  0.0  0.0  72212  5948 ?        Ss   Apr15   0:20 postgres: 12/main: stats collector   
+postgres 113173  0.0  0.0 217844  6936 ?        Ss   Apr15   0:00 postgres: 12/main: logical replication launcher   
+dep2     114553  0.0  0.0  18952  9396 ?        Ss   Apr15   0:18 /lib/systemd/systemd --user
+dep2     114554  0.0  0.0 174408  7468 ?        S    Apr15   0:00 (sd-pam)
+systemd+ 115303  0.0  0.0  19072  7220 ?        Ss   Mar09   0:13 /lib/systemd/systemd-networkd
+systemd+ 115308  0.0  0.0  24476 11268 ?        Ss   Mar09   0:18 /lib/systemd/systemd-resolved
+root     115311  0.0  0.0 166416 105844 ?       S<s  Mar09   4:49 /lib/systemd/systemd-journald
+dep2     115480  0.0  0.0 2789164 123032 ?      Sl   04:33   0:05 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     116262  0.0  0.0 836116 49888 ?        Sl   06:59   0:03 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=fileWatcher
+dep2     116310  0.0  0.0  13192  8300 pts/77   Ss+  06:59   0:00 /usr/bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+root     125935  0.0  0.0  13932  8928 ?        Ss   09:41   0:00 sshd: dep2 [priv]
+dep2     126895  0.0  0.0  14064  5976 ?        S    09:41   0:00 sshd: dep2@notty
+dep2     127045  0.0  0.0   8884  3568 ?        Ss   09:41   0:00 bash
+root     130344  0.0  0.0  13936  9088 ?        Ss   09:41   0:00 sshd: dep2 [priv]
+dep2     130401  0.0  0.0  14068  6172 ?        S    09:41   0:00 sshd: dep2@notty
+dep2     130402  0.0  0.0   8884  3640 ?        Ss   09:41   0:00 bash
+dep2     130454  0.0  0.0 984676 118472 ?       Sl   09:41   0:11 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+dep2     130465  0.0  0.0 835804 46664 ?        Sl   09:41   0:01 /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/node /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/bootstrap-fork --type=fileWatcher
+dep2     130503  0.0  0.0  13192  8380 pts/87   Ss   09:41   0:00 /bin/bash --init-file /home/dep2/.vscode-server/bin/704ed70d4fd1c6bd6342c436f1ede30d1cff4710/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+dep2     132223  0.0  0.0  75792 47708 pts/39   S+   Apr19   0:00 python3 manage.py runserver 0.0.0.0:7010
+root     138377  0.0  0.0 3306280 116656 ?      Ssl  09:48   0:15 /usr/lib/snapd/snapd
+dep2     139014  0.0  0.0  77732 47512 ?        S    09:50   0:00 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139101  0.0  0.0   7232   576 ?        S    09:50   0:00 sleep 180
+dep2     139225  0.0  0.0 136712 106088 ?       S    Apr19   0:39 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139266  0.0  0.0 127340 96552 ?        S    Apr19   0:41 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139273  0.0  0.0 128744 98120 ?        S    Apr19   0:44 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139283  0.0  0.0 134596 103992 ?       S    Apr19   0:43 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:8000 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139312  0.0  0.0  79136 48884 ?        S    09:51   0:00 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139563  0.0  0.0   7232   516 ?        S    09:51   0:00 sleep 180
+dep2     139682  0.0  0.0  79136 48884 ?        S    09:52   0:00 /usr/bin/python3 /home/dep2/.local/bin/gunicorn mysite.wsgi:application --workers=8 --bind 0.0.0.0:7010 --error-logfile gunicorn_logs/error.log --access-logfile gunicorn_logs/access.log --log-level debug --capture-output
+dep2     139728  0.0  0.0   7232   576 ?        S    09:53   0:00 sleep 180
+root     143958  0.0  0.0   3644  1588 ?        Ss   09:53   0:00 snapfuse /var/lib/snapd/snaps/snapd_17950.snap /snap/snapd/17950 -o ro,nodev,allow_other,suid
+dep2     143961  0.0  0.0  10812  3520 pts/87   R+   09:53   0:00 ps -aux
+dep2     143962  0.0  0.0   7592  2200 pts/87   S+   09:53   0:00 less

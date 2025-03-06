@@ -1,0 +1,3 @@
+title,description,link,type,date,participants,participants_text,department
+string,string,string,string,dd-mm-yyyy,email_list,string,list
+Test Achievement,Test desc,,HC,13-02-2015,sarvo@iitrpr.ac.in,Test Participants,3
